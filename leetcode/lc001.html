@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>lc01两数和 | 宁宁大王的写字板</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="一个简单的 VuePress 示例项目">
+    
+    <link rel="preload" href="/vuepress-blog/assets/css/0.styles.db36d651.css" as="style"><link rel="preload" href="/vuepress-blog/assets/js/app.113ae668.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/2.c95ed0ff.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/1.a9a94530.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/41.2ff59fb4.js" as="script"><link rel="prefetch" href="/vuepress-blog/assets/js/10.a80dc50e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/11.041e0b47.js"><link rel="prefetch" href="/vuepress-blog/assets/js/12.4b5ad5b9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/13.7e492cf4.js"><link rel="prefetch" href="/vuepress-blog/assets/js/14.7d21639b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/15.ea37f0ce.js"><link rel="prefetch" href="/vuepress-blog/assets/js/16.87d00f92.js"><link rel="prefetch" href="/vuepress-blog/assets/js/17.893858a3.js"><link rel="prefetch" href="/vuepress-blog/assets/js/18.90116347.js"><link rel="prefetch" href="/vuepress-blog/assets/js/19.2a696a53.js"><link rel="prefetch" href="/vuepress-blog/assets/js/20.23ba6b64.js"><link rel="prefetch" href="/vuepress-blog/assets/js/21.31e32fb9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/22.f3a1c958.js"><link rel="prefetch" href="/vuepress-blog/assets/js/23.f0f58f24.js"><link rel="prefetch" href="/vuepress-blog/assets/js/24.8d1000b7.js"><link rel="prefetch" href="/vuepress-blog/assets/js/25.e2d8d52c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/26.69b73995.js"><link rel="prefetch" href="/vuepress-blog/assets/js/27.3a88d5a8.js"><link rel="prefetch" href="/vuepress-blog/assets/js/28.610b4083.js"><link rel="prefetch" href="/vuepress-blog/assets/js/29.50af597f.js"><link rel="prefetch" href="/vuepress-blog/assets/js/3.300d7081.js"><link rel="prefetch" href="/vuepress-blog/assets/js/30.fdb680ca.js"><link rel="prefetch" href="/vuepress-blog/assets/js/31.20fb2703.js"><link rel="prefetch" href="/vuepress-blog/assets/js/32.2dfbcf9c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/33.de6ad1b8.js"><link rel="prefetch" href="/vuepress-blog/assets/js/34.83434099.js"><link rel="prefetch" href="/vuepress-blog/assets/js/35.3339b63e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/36.d7185df0.js"><link rel="prefetch" href="/vuepress-blog/assets/js/37.d32aca0b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/38.b25528dd.js"><link rel="prefetch" href="/vuepress-blog/assets/js/39.48ff8655.js"><link rel="prefetch" href="/vuepress-blog/assets/js/4.2e183bf6.js"><link rel="prefetch" href="/vuepress-blog/assets/js/40.10073f30.js"><link rel="prefetch" href="/vuepress-blog/assets/js/42.ba86fd0f.js"><link rel="prefetch" href="/vuepress-blog/assets/js/43.caf1c1e8.js"><link rel="prefetch" href="/vuepress-blog/assets/js/44.cd3120f3.js"><link rel="prefetch" href="/vuepress-blog/assets/js/45.4c2e51a1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/46.d54d0e2d.js"><link rel="prefetch" href="/vuepress-blog/assets/js/47.c5ab62ab.js"><link rel="prefetch" href="/vuepress-blog/assets/js/48.24f0d753.js"><link rel="prefetch" href="/vuepress-blog/assets/js/49.6c937cf6.js"><link rel="prefetch" href="/vuepress-blog/assets/js/5.e50c6310.js"><link rel="prefetch" href="/vuepress-blog/assets/js/6.2cf8d884.js"><link rel="prefetch" href="/vuepress-blog/assets/js/7.809e3600.js"><link rel="prefetch" href="/vuepress-blog/assets/js/vendors~docsearch.cf80bbd5.js">
+    <link rel="stylesheet" href="/vuepress-blog/assets/css/0.styles.db36d651.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-blog/" class="home-link router-link-active"><!----> <span class="site-name">宁宁大王的写字板</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress-blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vuepress-blog/travel-doc/" class="nav-link">
+  旅行攻略
+</a></div><div class="nav-item"><a href="/vuepress-blog/literature-review/" class="nav-link">
+  书评和随笔
+</a></div><div class="nav-item"><a href="/vuepress-blog/leetcode/" class="nav-link router-link-active">
+  lc算法
+</a></div><div class="nav-item"><a href="/vuepress-blog/frontend/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/vuepress-blog/general/" class="nav-link">
+  cs通用
+</a></div><div class="nav-item"><a href="/vuepress-blog/interview/" class="nav-link">
+  面试记录
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress-blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vuepress-blog/travel-doc/" class="nav-link">
+  旅行攻略
+</a></div><div class="nav-item"><a href="/vuepress-blog/literature-review/" class="nav-link">
+  书评和随笔
+</a></div><div class="nav-item"><a href="/vuepress-blog/leetcode/" class="nav-link router-link-active">
+  lc算法
+</a></div><div class="nav-item"><a href="/vuepress-blog/frontend/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/vuepress-blog/general/" class="nav-link">
+  cs通用
+</a></div><div class="nav-item"><a href="/vuepress-blog/interview/" class="nav-link">
+  面试记录
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>leetcode</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-blog/leetcode/" aria-current="page" class="sidebar-link">Leetcode</a></li><li><a href="/vuepress-blog/leetcode/lc001.html" aria-current="page" class="active sidebar-link">lc01两数和</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress-blog/leetcode/lc001.html#代码" class="sidebar-link">代码</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/leetcode/lc001.html#思路" class="sidebar-link">思路</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/leetcode/lc001.html#备注" class="sidebar-link">备注</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/leetcode/lc001.html#评价" class="sidebar-link">评价</a></li></ul></li><li><a href="/vuepress-blog/leetcode/lc020.html" class="sidebar-link">lc020有效括号</a></li><li><a href="/vuepress-blog/leetcode/lc056.html" class="sidebar-link">lc056合并区间</a></li><li><a href="/vuepress-blog/leetcode/lc070.html" class="sidebar-link">lc070爬楼梯</a></li><li><a href="/vuepress-blog/leetcode/lc094.html" class="sidebar-link">lc094二叉树中序遍历</a></li><li><a href="/vuepress-blog/leetcode/lc144.html" class="sidebar-link">lc144二叉树前序遍历</a></li><li><a href="/vuepress-blog/leetcode/lc198.html" class="sidebar-link">lc198打家劫舍</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="lc01两数和"><a href="#lc01两数和" class="header-anchor">#</a> lc01两数和</h1> <h2 id="代码"><a href="#代码" class="header-anchor">#</a> 代码</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>result<span class="token punctuation">[</span>target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">||</span> result<span class="token punctuation">[</span>target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">[</span>result<span class="token punctuation">[</span>target <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    result<span class="token punctuation">[</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="思路"><a href="#思路" class="header-anchor">#</a> 思路</h2> <ul><li>思路没什么了不起，指针遍历一次读值即可，想搞花活就sort然后双指针前后摇</li> <li>另外一个点我觉得js对象读值取值这个操作是一个蛮常见的思想，远的react的hooks列表，发布观察什么的，可以研讨一下</li> <li>拿到一个数组首先想到On阶遍历算法呗，很多链表可以用快慢指针，我不太确定</li></ul> <h2 id="备注"><a href="#备注" class="header-anchor">#</a> 备注</h2> <ul><li>特别记得参数0，常值报错现象，出个这玩意没ac可有点过分了，但一定要注意啊，偶尔还真得写一下</li> <li>注意一下while和for循环边界问题，这个sb零号我已经学了第六年了还没怎么搞懂</li></ul> <h2 id="评价"><a href="#评价" class="header-anchor">#</a> 评价</h2> <ul><li>反正也没啥好评价了，特别注意备注第一条</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vuepress-blog/leetcode/" class="prev router-link-active">
+        Leetcode
+      </a></span> <span class="next"><a href="/vuepress-blog/leetcode/lc020.html">
+        lc020有效括号
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress-blog/assets/js/app.113ae668.js" defer></script><script src="/vuepress-blog/assets/js/2.c95ed0ff.js" defer></script><script src="/vuepress-blog/assets/js/1.a9a94530.js" defer></script><script src="/vuepress-blog/assets/js/41.2ff59fb4.js" defer></script>
+  </body>
+</html>
